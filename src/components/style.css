@@ -1,0 +1,15 @@
+/* 修改菜单项字体颜色 */
+.custom-menu .ant-menu-item {
+  color: black; /* 将颜色替换为你想要的颜色 */
+}
+
+/* 修改菜单宽度和高度 */
+.custom-menu .ant-menu {
+  width: 100%; /* 将宽度替换为你想要的宽度 */
+  height: 200px; /* 将高度替换为你想要的高度 */
+}
+
+/* 修改菜单背景颜色 */
+.custom-menu .ant-menu {
+  background-color: #b61e1e; /* 将背景颜色替换为你想要的颜色 */
+}
