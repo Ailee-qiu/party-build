@@ -1,15 +1,48 @@
-/* 修改菜单项字体颜色 */
-.custom-menu .ant-menu-item {
-  color: black; /* 将颜色替换为你想要的颜色 */
-}
-
-/* 修改菜单宽度和高度 */
-.custom-menu .ant-menu {
-  width: 100%; /* 将宽度替换为你想要的宽度 */
-  height: 200px; /* 将高度替换为你想要的高度 */
-}
-
 /* 修改菜单背景颜色 */
-.custom-menu .ant-menu {
-  background-color: #b61e1e; /* 将背景颜色替换为你想要的颜色 */
+.custom-menu {
+  width: 100%;
+  background-color: rgb(210, 39, 39); /* 将背景颜色替换为你想要的颜色 */
+  text-align: left;
+}
+
+.custom-menu .ant-menu-item {
+  color: white; /* 设置菜单项的文字颜色 */
+}
+
+.learning-focus-container {
+  width: 300px;
+  margin: 20px;
+}
+
+.divider {
+  margin: 10px 0;
+  border: 0;
+  border-top: 2px solid red;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-item {
+  text-decoration: none;
+  color: #000;
+  margin: 8px 0;
+}
+
+.link-item:hover {
+  color: red;
+}
+
+/* custom.css */
+
+.custom-table {
+  background-color: red; /* 设置列表背景色为红色 */
+  color: white; /* 设置文字颜色为白色 */
+}
+
+.custom-table th,
+.custom-table td {
+  color: white; /* 设置表头和单元格中文字的颜色为白色 */
 }

@@ -1,16 +1,31 @@
-import React from 'react'
-import { FileViewer } from 'react-file-viewer'
+import React, { useState } from 'react'
+import { Table, Space } from 'antd'
 
-const filePath = 'path-to-your-file' // 替换为你的文件路径
-const type = 'file-type' // 替换为你的文件类型
+import dataFile from '../common/constant'
+const { Column } = Table
+
 const OnlionLearning = () => {
+
+
+
   return (
     <div style={{ height: '100vh' }}>
-      <FileViewer
-        fileType={type}
-        filePath={filePath}
-        onError={e => console.log(e)}
-      />
+      <Table dataSource={dataFile} pagination={false} >
+        <Column title="文件名" dataIndex="fileName" key="fileName" />
+        <Column title="文件类型" dataIndex="fileType" key="fileType" />
+        <Column title="作者" dataIndex="author" key="author" />
+        <Column
+          title="操作"
+          key="action"
+          render={(text, record) => (
+            <Space >
+              <a href={record.url} target="_blank" rel="noopener noreferrer">
+                预览
+              </a>
+            </Space>
+          )}
+        />
+      </Table>
     </div>
   )
 }
